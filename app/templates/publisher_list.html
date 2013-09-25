@@ -4,7 +4,9 @@
     <h2>Publishers</h2>
     <ul>
         {% for publisher in object_list %}
-            <li>{{ publisher.name }}</li>
+           <li>
+                <a href="/publisher/{{ publisher.id }}">{{ publisher.name }}</a>
+            </li>
         {% endfor %}
     </ul>
 {% endblock %}
