@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block Content %}
+    <h2>Publisher</h2>
+    <p>{{ publisher.name }}</p>
+    <h2>Publisher Books</h2>
+     <ul>
+        {% for book in object_list %}
+            <li>{{ book.title }}</li>
+        {% endfor %}
+    </ul>
+    <br />
+    <p><a href="/publishers/"> Back</a></p>
+{% endblock %}
