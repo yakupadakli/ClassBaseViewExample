@@ -21,6 +21,7 @@ class Author(models.Model):
     name = models.CharField(max_length=200)
     email = models.EmailField()
     head_shot = models.ImageField(upload_to='author_head_shots')
+    last_accessed = models.DateTimeField()
 
     def __unicode__(self):
         return self.name
